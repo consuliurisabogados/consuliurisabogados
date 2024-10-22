@@ -3,78 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios Jurídicos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .service-box {
-            background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin: 10px;
-            width: 250px;
-            display: inline-block;
-        }
-
-        .service-box h2 {
-            margin: 0;
-            padding-bottom: 10px;
-            font-size: 1.5em;
-            color: #333;
-        }
-
-        .service-box p {
-            color: #777;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Cónsul iuris - Abogados especializados</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="home">
+        <img class = "logo" src="logo_transparency.png">
+    </div>
+    <div class = "description">
+        <h1>CONSUL-IURIS</h1>
+        <h2>Abogados especializados</h2>
+        <p>Somos una firma especializada en diferentes áreas del derecho, profesionales competentes, honestos, con amplia experiencia y capacitados para asesorarlo(a) y representarlo(a) de una manera eficaz para dar solución a los inconvenientes legales dependiendo la naturaleza  de cada caso, siempre trabajando con honestiad y eficacia.</p>
+    </div>
+    <div class = "services_container">
     <div class="container">
-        <div class="service-box">
+        <h1>SERVICIOS</h1>
+        <div class="box" onclick="toggleCollapse('content1')">
             <h2>Derecho laboral</h2>
+        </div>
+        <div id="content1" class="content">
             <ul>
-                <li>Asesoría y análisis de relaciones laborales.</li>
-                <li>Contratación laboral.</li>
-                <li>Demandas laborales.</li>
-                <li>Tramites ante el ministerio del trabajo.</li>
-                <li>Cobro de liquidaciones  morosas y acompañamiento.</li>
-                <li>Conciliaciones y audiencias.</li>
-                <li>Procesos disciplinarios interos y externos.</li>
+                <li>Asesorías y análisis de documentos y todo lo relacionado con las relaciones laborales.</li>
+                <li>Contratos y procedimiento de contratación laboral.</li>
+                <li>Demandas y audiencias ante la jurisdicción laboral.</li>
+                <li>Acompañamiento y trámites ante el Ministerio de Trabajo.</li>
+                <li>Cobro y recuperación de liquidaciones morosas.</li>
+                <li>Acompañamiento en audiencias conciliatorias.</li>
+                <li>Acompañamiento a personas naturales y jurídicas en procesos disciplinarios a nivel interno y externo.</li>
                 <li>Procesos ejecutivos laborales.</li>
             </ul>
         </div>
-        <div class="service-box">
-            <h2>Derecho civil y comercial</h2>
+
+        <div class="box" onclick="toggleCollapse('content2')">
+            <h2>Seguridad social</h2>
+        </div>
+        <div id="content2" class="content">
             <ul>
-                <li>Asesorías y análsis en temas civiles.</li>
-                <li>Contratos civiles y comerciales.</li>
-                <li>Demandas laborales.</li>
-                <li>Tramites ante el ministerio del trabajo.</li>
-                <li>Cobro de liquidaciones  morosas y acompañamiento.</li>
-                <li>Conciliaciones y audiencias.</li>
-                <li>Procesos disciplinarios interos y externos.</li>
-                <li>Procesos ejecutivos laborales.</li>
+                <li>Trámites de solicitud, o reliquidación de pensiones (vejez, sobrevivientes, invalidez).</li>
+                <li>Acompañamiento en todo tipo de trámites ante EPS, AFP, ARL, cajas de compensación, etc.</li>
+                <li>Trámites ante entidades estatales, superintendencias y demás que se requieran.</li>
+                <li>Solicitud de devolución de aportes ante fondos privados de pensiones o indemnización sustitutiva ante Colpensiones.</li>
+                <li>Análisis, asesoría y revisión de documentos y requisitos para acceder a pensión, régimen de transición o favorabilidad, para pensiones ordinarias y regímenes especiales.</li>
+                <li>Todo tipo de requerimientos, peticiones, acciones de tutelas, PQRs, demandas, escritos, etc.</li>
             </ul>
         </div>
-        <div class="service-box">
+
+        <div class="box" onclick="toggleCollapse('content3')">
+            <h2>Derecho Civil y Comercial</h2>
+        </div>
+        <div id="content3" class="content">
+            <ul>
+                <li>Asesorías, análisis y revisión de documentos relacionados con temas civiles.</li>
+                <li>Revisión, redacción de contratos civiles y comerciales.</li>
+                <li>Trámite para restitución de inmuebles en arriendo.</li>
+                <li>Trámites y análisis de sucesiones ante notarias y juzgados.</li>
+                <li>Trámites de demandas ejecutivas y cobro de cartera castigada.</li>
+                <li>Responsabilidades civiles contractuales y extracontractuales.</li>
+                <li>Todo lo relacionado con el derecho civil y proceso para el cobro de títulos valores (pagarés, letras de cambio, contratos, etc).</li>
+            </ul>
+        </div>
+
+        <div class="box" onclick="toggleCollapse('content4')">
+            <h2>Derecho de Familia</h2>
+        </div>
+        <div id="content4" class="content">
+            <ul>
+                <li>Trámites ante comisarías de familia y toda la jurisdicción de familia.</li>
+                <li>Divorcios y liquidación de la sociedad conyugal.</li>
+                <li>Solicitud de patria potestad.</li>
+                <li>Impugnación de paternidad.</li>
+                <li>Acompañamiento en audiencias, conciliaciones y demandas ante la jurisdicción de familia.</li>
+                <li>Todo tipo de requerimientos para el restablecimiento de derechos de los involucrados en controversias ante la jurisdicción de familia.</li>
+            </ul>
+        </div>
+
+        <div class="box" onclick="toggleCollapse('content5')">
             <h2>Derecho Penal</h2>
-            <p>Defensa legal y asesoría en procesos penales.</p>
+        </div>
+        <div id="content5" class="content">
+            <ul>
+                <li>Acompañamiento como defensor de víctimas de delitos ante comisarías, URI, fiscalías y juzgados penales.</li>
+                <li>Análisis, asesorías y radicación de documentos en cuánto a casos delictivos.</li>
+                <li>Trámites y requerimientos ante Inpec y Ministerio de Justicia.</li>
+                <li>Acompañamiento y representación en siniestros con víctimas fatales y lesionados.</li>
+                <li>Acompañamiento y representación en temas políticos y de convivencia.</li>
+            </ul>
+        </div>
+
+        <div class="box" onclick="toggleCollapse('content6')">
+            <h2>Derecho Administrativo</h2>
+        </div>
+        <div id="content6" class="content">
+            <ul>
+                <li>Trámites y solicitudes de modificación o revocatoria de actos administrativos ante entidades públicas para restablecimiento de derechos, individuales o colectivos.</li>
+                <li>Procesos de acciones administrativas individuales y colectivas.</li>
+                <li>Acompañamiento y asesoría en audiencias convocadas por la administración estatal y distrital.</li>
+                <li>Revisión, análisis y procedimiento contra actos administrativos dictados por el distrito o la nación.</li>
+            </ul>
+        </div>
+
+        <div class="box" onclick="toggleCollapse('content7')">
+            <h2>Otros Trámites</h2>
+        </div>
+        <div id="content7" class="content">
+            <ul>
+                <li>Representación en impugnación de comparendos de tránsito.</li>
+                <li>Todo tipo solicitudes ante entidades distritales (movilidad, hacienda, educación, etc).</li>
+                <li>Requerimientos ante entidades nacionales (Ministerios) y entidades de control y vigilancia (procuraduría, contraloría, superintendencias).</li>
+                <li>Estudio y solicitud de eliminación de reportes negativos ante Datacrédito y las distintas centrales de riesgo.</li>
+                <li>Redacción, radicación de todo tipo de documentos legales (derechos de petición, PQRs, recursos, contratos, acuerdos, acciones de tutela, actas conciliatorias, etc).</li>
+                <li>Representación y acompañamiento en todo tipo de audiencias ante entidades y empresas en cualquier rama del derecho.</li>
+            </ul>
+        </div>
+
+        <div class="box" onclick="toggleCollapse('content8')">
+            <h2>Otros Servicios</h2>
+        </div>
+        <div id="content8" class="content">
+            <ul>
+                <li>Asesorías y acompañamiento a estudiantes en temas relacionados con cualquier rama del derecho.</li>
+                <li>Asesorías de trabajos, exposiciones, consultorio jurídico en temas legales.</li>
+                <li>Asesoría en redacción de documentos, aplicación de normas y preparación de parciales en las ramas del derecho.</li>
+                <li>Preparación para asistencia de todo tipo de audiencias, tips y metodología para resultados exitosos.</li>
+            </ul>
         </div>
     </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
