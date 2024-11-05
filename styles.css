@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.content {
+    display: none; /* Todos los contenidos inician colapsados */
+    background-color: #fafafa;
+    padding: 10px;
+    border: 1px solid #ddd;
+
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;    
+}
+
+.services_container {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3%;
+}
+
+.home {
+    display: flex; 
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 3%;
+}
+
+.logo {
+    width: 30%;
+}
+
+.description {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 1000;
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 500;    
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal; 
+}
