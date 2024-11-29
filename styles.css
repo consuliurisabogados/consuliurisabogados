@@ -1,76 +1,169 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+/* General styles */
+body {
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f5f5f5;
+    background-image: url('/background.jpg');
+    /*background-size: cover;*/
+    line-height: 1.6;
 }
 
-.box {
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    padding: 20px;
-    cursor: pointer;
+h1, h2 {
+    color: #d4af37; /* Dorado */
     text-align: center;
-
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-}
-
-.content {
-    display: none; /* Todos los contenidos inician colapsados */
-    background-color: #fafafa;
-    padding: 10px;
-    border: 1px solid #ddd;
-
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;    
-}
-
-.services_container {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 3%;
-}
-
-.home {
-    display: flex; 
-    justify-content: center;
-    padding-top: 10%;
-    padding-bottom: 3%;
-}
-
-.logo {
-    width: 30%;
-}
-
-.description {
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 2%;
+    margin-bottom: 10px;
 }
 
 h1 {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 1000;
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
 h2 {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 500;    
+    font-size: 1.8em;
+    font-weight: 600;
 }
 
-p {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal; 
+p, ul, li, label {
+    color: #e0e0e0; /* Gris claro */
 }
+
+a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+/* Logo and header */
+.home {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo {
+    width: 150px;
+}
+
+/* Description */
+.description {
+    text-align: center;
+    padding: 20px;
+    background-color: #111111;
+    margin: 20px;
+    border-radius: 8px;
+    /* border: 2px solid #d4af37; */
+}
+
+/* Services section */
+.services_container {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.container {
+    /* border: 2px solid #d4af37; */
+    border-radius: 10px;
+    background-color: #111111;
+    padding: 20px;
+}
+
+.box {
+    cursor: pointer;
+    background-color: #000000;
+    /* color: #d4af37; */
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #d4af37;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.box:hover {
+    background-color: #d4af37;
+    color: #000000;
+    transform: scale(1.03);
+}
+
+.content {
+    display: none;
+    padding: 10px 20px;
+    background-color: #1a1a1a;
+    /* border: 2px solid #d4af37; */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.content ul {
+    padding-left: 20px;
+}
+
+.content li {
+    list-style-type: disc;
+    margin: 5px 0;
+}
+
+/* Contact form */
+.contact-form {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    padding-right: 3%;
+    background-color: #111111;
+    /* border: 2px solid #d4af37; */
+    border-radius: 10px;
+}
+
+.contact-form h1 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d4af37;
+    color: #000000;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e0c060;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container, .contact-form {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
