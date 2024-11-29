@@ -108,7 +108,7 @@ a {
     max-width: 1000px;
     margin: 40px auto;
     padding: 40px;
-    padding-right: 3%;
+    padding-right: 7%;
     background-color: #111111;
     /* border: 2px solid #d4af37; */
     border-radius: 10px;
@@ -135,7 +135,7 @@ a {
 }
 
 .contact-form button {
-    width: 100%;
+    width: 102.5%;
     padding: 10px;
     background-color: #d4af37;
     color: #000000;
