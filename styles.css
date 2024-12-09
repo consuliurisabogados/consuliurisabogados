@@ -80,7 +80,7 @@ a {
 }
 
 .box:hover {
-    background-color: #d4af37;
+    background-color: #423b22;
     color: #000000;
     transform: scale(1.03);
 }
@@ -89,7 +89,6 @@ a {
     display: none;
     padding: 10px 20px;
     background-color: #1a1a1a;
-    /* border: 2px solid #d4af37; */
     border-radius: 8px;
     margin-bottom: 15px;
 }
@@ -155,6 +154,16 @@ a {
 @media (max-width: 768px) {
     .container, .contact-form {
         padding: 15px;
+        margin: 20px; 
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box; 
+    }
+
+    .contact-form button {
+        width: 100%; /* Ajusta el botón al contenedor */
     }
 
     h1 {
@@ -165,4 +174,3 @@ a {
         font-size: 1.5em;
     }
 }
-
