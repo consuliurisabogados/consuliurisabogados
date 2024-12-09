@@ -14,3 +14,8 @@ function toggleCollapse(contentId) {
         content.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
+
+function scrollToContactForm() {
+    const contactForm = document.querySelector('.contact-form');
+    contactForm.scrollIntoView({ behavior: 'smooth' });
+}
